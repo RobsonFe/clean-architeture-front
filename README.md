@@ -10,9 +10,9 @@ A inspiração e base desse projeto foi feita após leitura do artigo do `The Pr
 
 Segue o link em questão para maiores detalhes da implementação.
 
-- [Artigo 1]("https://thepragmaticengineer.hashnode.dev/clean-architecture-em-aplicacoes-frontend-utilizando-angular")
+- [Artigo 1](https://thepragmaticengineer.hashnode.dev/clean-architecture-em-aplicacoes-frontend-utilizando-angular)
 
-- [Artigo 2]("https://dev.to/bespoyasov/clean-architecture-on-frontend-4311?ref=dailydev")
+- [Artigo 2](https://dev.to/bespoyasov/clean-architecture-on-frontend-4311?ref=dailydev)
 
 ## **Etapas Iniciais**
 
