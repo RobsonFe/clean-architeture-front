@@ -1,59 +1,75 @@
-# CleanArchitecture
+# Clean Architecture - Front-End
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.4.
+Este projeto foi gerado usando o [Angular CLI](https://github.com/angular/angular-cli) versão 19.2.4.
 
-## Development server
+## Descrição:
 
-To start a local development server, run:
+O objetivo desse projeto é o estudo da arquitetra limpa no Front-End, onde aplicaremos os conceitos e fundamentos da arquietura limpa, de uma forma onde seja um sistema com o máximo de desaclopamento para melhor manutenção e escalabilidade da aplicação, onde esses conceitos e fundamentos, embora nesse projeto seja feito em Angular, possa ser utilizado em outros frameworks, ou até mesmo esse projeto possa ser atualizado para outro framework, sem alterar as bases e fundamentos do négocio.
+
+A inspiração e base desse projeto foi feita após leitura do artigo do `The Pragmatic Engineer` e `Daily Dev`.
+
+Segue o link em questão para maiores detalhes da implementação.
+
+- [Artigo 1]("https://thepragmaticengineer.hashnode.dev/clean-architecture-em-aplicacoes-frontend-utilizando-angular")
+
+- [Artigo 2]("https://dev.to/bespoyasov/clean-architecture-on-frontend-4311?ref=dailydev")
+
+## **Etapas Iniciais**
+
+- Essa etapa inicial é para configuração e instalação do projeto.
+
+## Servidor de desenvolvimento
+
+Para iniciar um servidor de desenvolvimento local, execute:
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Após iniciar o servidor, abra seu navegador e navegue até `http://localhost:4200/`. A aplicação será recarregada automaticamente sempre que você modificar qualquer um dos arquivos-fonte.
 
-## Code scaffolding
+## Geração de código
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+O Angular CLI inclui ferramentas poderosas para geração de código. Para gerar um novo componente, execute:
 
 ```bash
-ng generate component component-name
+ng generate component nome-do-componente
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Para obter uma lista completa dos esquemas disponíveis (como `components`, `directives` ou `pipes`), execute:
 
 ```bash
 ng generate --help
 ```
 
-## Building
+## Construção
 
-To build the project run:
+Para compilar o projeto, execute:
 
 ```bash
 ng build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Isso compilará seu projeto e armazenará os artefatos de build no diretório `dist/`. Por padrão, a compilação para produção otimiza sua aplicação para desempenho e velocidade.
 
-## Running unit tests
+## Executando testes unitários
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Para executar testes unitários com o [Karma](https://karma-runner.github.io), use o seguinte comando:
 
 ```bash
 ng test
 ```
 
-## Running end-to-end tests
+## Executando testes de ponta a ponta (end-to-end)
 
-For end-to-end (e2e) testing, run:
+Para executar testes de ponta a ponta (e2e), execute:
 
 ```bash
 ng e2e
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+O Angular CLI não inclui um framework de testes de ponta a ponta por padrão. Você pode escolher um que melhor atenda às suas necessidades.
 
-## Additional Resources
+## Recursos adicionais
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Para mais informações sobre o uso do Angular CLI, incluindo uma referência detalhada de comandos, visite a página [Visão geral e referência de comandos do Angular CLI](https://angular.dev/tools/cli).

@@ -51,9 +51,9 @@
     line-height: 100%;
     letter-spacing: -0.125rem;
     margin: 0;
-    font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-      "Segoe UI Symbol";
+    font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol";
   }
 
   p {
@@ -162,6 +162,24 @@
     fill: var(--gray-900);
   }
 
+  .wrapper-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 50px;
+    color: var(--gray-900);
+  }
+  .title-info {
+    font-weight: 700;
+    color: var(--gray-900);
+  }
+
+  .description-info {
+    align-items: center;
+    margin: 8px 20px 0 20px;
+  }
+
   @media screen and (max-width: 650px) {
     .content {
       flex-direction: column;
@@ -231,32 +249,27 @@
     <div class="divider" role="separator" aria-label="Divider"></div>
     <div class="right-side">
       <div class="pill-group">
-        @for (item of [
-          { title: 'Explore the Docs', link: 'https://angular.dev' },
-          { title: 'Learn with Tutorials', link: 'https://angular.dev/tutorials' },
-          { title: 'CLI Docs', link: 'https://angular.dev/tools/cli' },
-          { title: 'Angular Language Service', link: 'https://angular.dev/tools/language-service' },
-          { title: 'Angular DevTools', link: 'https://angular.dev/tools/devtools' },
-        ]; track item.title) {
-          <a
-            class="pill"
-            [href]="item.link"
-            target="_blank"
-            rel="noopener"
+        @for (item of [ { title: 'Explore the Docs', link: 'https://angular.dev'
+        }, { title: 'Learn with Tutorials', link:
+        'https://angular.dev/tutorials' }, { title: 'CLI Docs', link:
+        'https://angular.dev/tools/cli' }, { title: 'Angular Language Service',
+        link: 'https://angular.dev/tools/language-service' }, { title: 'Angular
+        DevTools', link: 'https://angular.dev/tools/devtools' }, ]; track
+        item.title) {
+        <a class="pill" [href]="item.link" target="_blank" rel="noopener">
+          <span>{{ item.title }}</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="14"
+            viewBox="0 -960 960 960"
+            width="14"
+            fill="currentColor"
           >
-            <span>{{ item.title }}</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="14"
-              viewBox="0 -960 960 960"
-              width="14"
-              fill="currentColor"
-            >
-              <path
-                d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"
-              />
-            </svg>
-          </a>
+            <path
+              d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"
+            />
+          </svg>
+        </a>
         }
       </div>
       <div class="social-links">
@@ -332,5 +345,20 @@
 <!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
+<aside class="wrapper-info">
+  <h1 class="title-info">Arquitetura Limpa no Front-End</h1>
+  <p class="description-info">
+    Este é um projeto de exemplo de uma aplicação Angular com a arquitetura
+    limpa. onde esse mesmo exemplo de arquitetura possa ser utilizada em
+    qualquer framrwork ou linguagem de programação.
+  </p>
+  <p class="description-info">
+    O objetivo é mostrar como é possível criar uma aplicação com uma arquitetura
+    limpa, onde o código é organizado de forma que seja fácil de entender e de
+    dar manutenção. A forma que o código é organziado, permite que seja fácil de
+    testar, de escalar e de evoluir. Até mesmo sendo possivel atualizar o
+    framework ou mudar, sem afetar a aplicação.
+  </p>
+</aside>
 
 <router-outlet />
