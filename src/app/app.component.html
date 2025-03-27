@@ -1,34 +1,130 @@
 <div
-  class="w-full min-h-screen bg-gradient-to-br from-white to-gray-50 flex justify-center items-center p-8"
+  class="min-h-screen bg-gradient-to-br from-indigo-50 to-purple-100 flex flex-col"
 >
-  <div
-    class="max-w-lg bg-white rounded-xl shadow-lg p-8 text-center transform hover:scale-105 transition duration-300"
-  >
-    <h1 class="text-4xl font-semibold text-[#7f5af0] mb-2">
-      Arquitetura Limpa no Front-End
-    </h1>
-    <p class="text-base font-medium text-[#2cb67d] mb-6">
-      Uma abordagem escalável, testável e sustentável para construir aplicações.
-    </p>
-    <div class="text-[#16161a] leading-relaxed space-y-4">
-      <p>
-        Este é um projeto de exemplo que ilustra como a
-        <strong class="text-[#7f5af0]">Arquitetura Limpa</strong>
-        pode ser aplicada ao desenvolvimento front-end, mas com a vantagem de
-        ser facilmente adaptável a qualquer framework ou linguagem de
-        programação.
-      </p>
-      <p>
-        O objetivo é manter um código
-        <em class="not-italic font-medium text-[#666]">bem organizado</em>,
-        <em class="not-italic font-medium text-[#666]">fácil de entender</em> e
-        <em class="not-italic font-medium text-[#666]">fácil de manter</em>.
-        Essa separação clara de responsabilidades e camadas permite maior
-        flexibilidade para realizar testes, evoluir o projeto e até mesmo trocar
-        o framework principal sem impactar a essência da aplicação.
-      </p>
+  <nav class="px-8 py-4 flex justify-between items-center">
+    <div class="flex items-center space-x-3">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-8 w-8 text-purple-600"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="{2}"
+          d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
+        />
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="{2}"
+          d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+        />
+      </svg>
+      <span class="text-xl font-bold text-gray-800">CleanArch</span>
+    </div>
+    <div class="space-x-4">
+      <a href="#" class="text-purple-600 hover:text-purple-800 transition"
+        >Documentação</a
+      >
+      <a
+        href="https://github.com/RobsonFe"
+        target="_blank"
+        class="text-purple-600 hover:text-purple-800 transition"
+        >GitHub</a
+      >
+    </div>
+  </nav>
+
+  <div class="flex-grow flex items-center justify-center px-8">
+    <div class="max-w-4xl w-full grid md:grid-cols-2 gap-12 items-center">
+      <div class="space-y-6">
+        <h1 class="text-5xl font-extrabold text-gray-900 leading-tight">
+          Arquitetura Limpa
+          <span class="block text-purple-600">Front-End</span>
+        </h1>
+        <p class="text-xl text-gray-600">
+          Uma abordagem escalável, testável e sustentável para a construção de
+          aplicações que transcende frameworks e linguagens de programação.
+        </p>
+        <div class="flex space-x-4">
+          <button
+            class="bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition cursor-pointer"
+          >
+            Comece Agora
+          </button>
+          <button
+            class="border border-purple-600 text-purple-600 px-6 py-3 rounded-lg hover:bg-purple-50 transition cursor-pointer"
+          >
+            Saiba Mais
+          </button>
+        </div>
+      </div>
+
+      <div class="relative">
+        <div
+          class="absolute -inset-2 bg-purple-200 rounded-xl blur-xl opacity-50"
+        ></div>
+        <div class="relative bg-white p-8 rounded-xl shadow-2xl space-y-4">
+          <h2 class="text-2xl font-semibold text-gray-800">Princípios-chave</h2>
+          <ul class="space-y-3">
+            <li class="flex items-center space-x-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 text-green-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="{2}"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+              <span>Clara Separação de Responsabilidades</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 text-green-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="{2}"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+              <span>Independência de Frameworks</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 text-green-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="{2}"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+              <span>Testabilidade</span>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-
 <router-outlet />
